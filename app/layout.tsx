@@ -10,7 +10,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "AI Testcase Generator",
   description: "Making ease for developers",
-    generator: 'abubakarsiddiquii'
+  generator: 'abubakarsiddiquii',
+  icons: {
+    icon: "/app-logo.png",
+  },
 }
 
 export default function RootLayout({
