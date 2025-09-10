@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -366,8 +367,14 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-3">
-            <TestTube className="h-10 w-10 text-blue-600" />
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center">
+            <Image
+              src="/icon.png"
+              alt="AI Test Case Generator Logo"
+              width={80}
+              height={80}
+              className="rounded"
+            />
             AI Test Case Generator
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -451,11 +458,10 @@ export default function HomePage() {
                       {repositories.map((repo) => (
                         <div
                           key={repo.id}
-                          className={`p-3 border rounded-lg cursor-pointer transition-colors ${
-                            selectedRepo?.id === repo.id
-                              ? "border-blue-500 bg-blue-50"
-                              : "border-gray-200 hover:border-gray-300"
-                          }`}
+                          className={`p-3 border rounded-lg cursor-pointer transition-colors ${selectedRepo?.id === repo.id
+                            ? "border-blue-500 bg-blue-50"
+                            : "border-gray-200 hover:border-gray-300"
+                            }`}
                           onClick={() => handleRepoSelect(repo)}
                         >
                           <div className="flex items-center justify-between">

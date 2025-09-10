@@ -207,17 +207,17 @@ export function GitHubIntegration({ onAuth }: GitHubIntegrationProps) {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 mt-3 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-blue-400">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            <a href="#" className="text-gray-400 hover:text-blue-400">
               Terms of Service
             </a>
             <a
               href="https://github.com/abubakarsiddiquii"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white"
+              className="text-gray-400 hover:text-blue-400"
             >
               GitHub
             </a>
@@ -225,7 +225,7 @@ export function GitHubIntegration({ onAuth }: GitHubIntegrationProps) {
               href="https://www.linkedin.com/in/abubakarsiddiquii/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white"
+              className="text-gray-400 hover:text-blue-400"
             >
               LinkedIn
             </a>
@@ -233,7 +233,7 @@ export function GitHubIntegration({ onAuth }: GitHubIntegrationProps) {
               href="https://abubakarsportfolio.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white"
+              className="text-gray-400 hover:text-blue-400"
             >
               Portfolio
             </a>
